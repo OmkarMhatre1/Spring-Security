@@ -36,7 +36,7 @@ public class WebSecurityConfiguration {
                 .permitAll()
                 .requestMatchers("/home")
                 .hasAuthority("USER")
-                .requestMatchers("/admin"+"/user")
+                .requestMatchers("/admin"+"/user"+"/user/{id}"+"/delete/{id}")
                 .hasAuthority("ADMIN")
                 .anyRequest()
                 .authenticated()
