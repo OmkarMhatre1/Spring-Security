@@ -52,7 +52,7 @@ public class WebSecurityConfiguration {
     }
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder(){
+        public BCryptPasswordEncoder bCryptPasswordEncoder(){
         return new BCryptPasswordEncoder();
     }
 }
